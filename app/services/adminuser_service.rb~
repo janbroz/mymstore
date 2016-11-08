@@ -1,0 +1,20 @@
+class AdminuserService
+
+  def initialize()
+    @client = Savon.client(wsdl: "url")
+  end
+
+  def registrar_usuario()
+  end
+
+  def editar_usuario()
+  end
+
+  def eliminar_usuario()
+  end
+
+  def listar_usuarios()
+  end
+
+  
+end

@@ -1,0 +1,25 @@
+class AdminventasService
+
+  def initialize()
+    @client = Savon.client(wsdl: "url")
+  end
+
+  def crear_venta()
+  end
+
+  def editar_venta()
+  end
+
+  def eliminar_venta()
+  end
+
+  def obtener_total()
+  end
+
+  def generar_factura()
+  end
+
+  def generar_devolucion()
+  end
+
+end

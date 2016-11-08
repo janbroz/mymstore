@@ -1,0 +1,8 @@
+class AdminrepuestoService
+
+  def initialize()
+    @client = Savon.client(wsdl: "url")
+  end
+
+
+end

@@ -1,0 +1,7 @@
+class StoresController < ApplicationController
+  def index
+    @stores = ["tienda1", "tienda2", "tienda3"]
+  end
+
+  
+end

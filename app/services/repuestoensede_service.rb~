@@ -1,0 +1,14 @@
+class RepuestoensedeService
+
+  def initialize()
+    client = 
+  end
+
+  def consultar_repuesto_en_sede
+  end
+
+  def modificar_repuesto_en_sede
+  end
+
+
+end
