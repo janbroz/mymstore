@@ -7,7 +7,12 @@ class StoresController < ApplicationController
 
   end
 
+  def new
+  end
+
   def create
+    puts params[:store]
+    redirect_to :stores
   end
 
   def update

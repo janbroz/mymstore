@@ -1,0 +1,28 @@
+<h1> Nueva tienda </h1>
+
+<%= form_for :store, url: stores_path do |f| %>
+<p>
+  <%= f.label :sede %><br>
+  <%= f.text_field :sede %>
+</p>
+
+<p>
+  <%= f.label :ciudad %><br>
+  <%= f.text_field :ciudad %>
+</p>
+
+<p>
+  <%= f.label :direccion %><br>
+  <%= f.text_field :direccion %>
+</p>
+
+<p>
+  <%= f.label :sede %><br>
+  <%= f.text_field :sede %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+
+<% end %>

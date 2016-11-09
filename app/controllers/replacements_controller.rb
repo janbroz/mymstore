@@ -1,4 +1,5 @@
 class ReplacementsController < ApplicationController
+
   def index
 
   end
@@ -10,7 +11,7 @@ class ReplacementsController < ApplicationController
 
   def create
     puts params[:replacement]
-    redirect_to :action => :index
+    redirect_to :replacements
   end
 
   def update
