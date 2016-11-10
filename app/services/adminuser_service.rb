@@ -2,7 +2,7 @@
 class AdminuserService
 
   def initialize()
-    @client = Savon.client(wsdl: "url")
+    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/AdminUsuariosWS?wsdl")
   end
 
   def registrar_usuario(nombre, contraseña, documento, correo, telefono, direccion, pais, tusuario)

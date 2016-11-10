@@ -1,7 +1,7 @@
-class AdminventasService
+class DetalleventasService
 
   def initialize()
-    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/AdminVentasWS?wsdl")
+    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/DetalleVentaWS?wsdl")
   end
 
   def crear_venta()

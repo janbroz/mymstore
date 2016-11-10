@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :stores
   resources :replacements
+  resources :store_replacements
 
 
   # Example of regular route:

@@ -1,6 +1,20 @@
 <h1>Repuestos</h1>
 <p> Aca van los repuestos </p>
 
+<h3> Busqueda de repuesto </h3>
+<%= form_tag replacements_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Buscar", :name => nil %>
+  </p>
+<% end %>
+<p> Repuesto encontrado = <%= @repuesto %> </p>
+
+
+<br>
+<h3> Lista de Repuestos </h3>
+<p><%= @repuestos %></p>
+
 
 <%= link_to "Nuevo repuesto", new_replacement_path %>
 

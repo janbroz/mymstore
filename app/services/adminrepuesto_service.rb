@@ -1,7 +1,7 @@
 class AdminrepuestoService
 
   def initialize()
-    @client = Savon.client(wsdl: "url")
+    @client = Savon.client(wsdl: "http://25.77.79.209:8085/WebServicesAlmacenMyM/services/AdminRepuestoWS?wsdl")
   end
 
   def agregar_repuesto(repuesto, marca, referencia, descripcion, precio)
@@ -14,10 +14,15 @@ class AdminrepuestoService
 
   def consultar_repuesto(consulta)
     response = @client.call(:consultar, message: {"consulta" => consulta})
+    
   end
 
   def eliminar_repuesto(id)
     response = @client.call(:eliminar, message: {"id" => id})
+  end
+
+  def listar_repuestos()
+    response = @client.call(:listar, message: {})
   end
 
 

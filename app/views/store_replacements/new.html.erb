@@ -1,0 +1,24 @@
+<h1> Agregar repuesto en sede </h1>
+
+
+<%= form_for :replacement, url: replacements_path do |f| %>
+  <p>
+    <%= f.label :sede %><br>
+    <%= f.text_field :sede %>
+  </p>
+
+  <p>
+    <%= f.label :repuesto %><br>
+    <%= f.text_field :repuesto %>
+  </p>
+
+  <p>
+    <%= f.label :cantidad %><br>
+    <%= f.number_field :cantidad %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>  
+
+<% end %>

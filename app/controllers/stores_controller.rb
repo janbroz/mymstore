@@ -1,6 +1,8 @@
 class StoresController < ApplicationController
   def index
-    @stores = ["tienda1", "tienda2", "tienda3"]
+    adminsede = AdminsedeService.new()    
+    tmp_stores = adminsede.listar_sedes().to_hash
+    @stores = tmp_stores[:listar_sedes_response][:listar_sedes_return]
   end
 
   def show
@@ -11,7 +13,13 @@ class StoresController < ApplicationController
   end
 
   def create
-    puts params[:store]
+    adminsede = AdminsedeService.new()
+    sede = params[:store][:sede]
+    ciudad = params[:store][:ciudad]
+    direccion = params[:store][:direccion]
+    telefono = params[:store][:telefono]
+    adminsede.crear_sede(sede, ciudad, direccion, telefono)
+    
     redirect_to :stores
   end
 

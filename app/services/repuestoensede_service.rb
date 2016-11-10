@@ -1,7 +1,7 @@
 class RepuestoensedeService
 
   def initialize()
-    @client = Savon.client(wsdl: "rpensedeurl")
+    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/repuestoEnSedeWS?wsdl")
   end
 
   def consultar_repuesto_en_sede
