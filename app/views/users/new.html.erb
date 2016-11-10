@@ -1,0 +1,47 @@
+<h1> Crear usuario </h1>
+
+<%= form_for :user, url: users_path do |f| %>
+  <p>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :contraseña %><br>
+    <%= f.text_field :contraseña %>
+  </p>
+
+  <p>
+    <%= f.label :documento %><br>
+    <%= f.text_field :documento %>
+  </p>
+
+  <p>
+    <%= f.label :correo %><br>
+    <%= f.text_field :correo %>
+  </p>  
+
+  <p>
+    <%= f.label :telefono %><br>
+    <%= f.text_field :telefono %>
+  </p>
+
+  <p>
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </p>
+
+  <p>
+    <%= f.label :pais %><br>
+    <%= f.text_field :pais %>
+  </p>  
+
+  <p>
+    <%= f.label :tusuario %><br>
+    <%= f.text_field :tusuario %>
+  </p>  
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

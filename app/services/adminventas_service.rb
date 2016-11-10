@@ -1,10 +1,11 @@
 class AdminventasService
 
   def initialize()
-    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/AdminVentasWS?wsdl")
+    @client = Savon.client(wsdl: "http://25.77.79.209:8085/WebServicesAlmacenMyM/services/AdminVentasWS?wsdl")
   end
 
-  def crear_venta()
+  def crear_venta(cliente, vendedor, fecha)
+    response = @client.call(:agregar_venta, message: {"cliente" => cliente, "vendedor" => vendedor, "fecha" => fecha})
   end
 
   def editar_venta()

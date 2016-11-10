@@ -1,0 +1,21 @@
+class UsersController < ApplicationController
+
+  def index
+    adminusers = AdminuserService.new()
+    @users = adminusers.listar_usuarios()
+    
+  end
+
+  def new
+  end
+
+  def create
+  end
+
+  def update
+  end
+
+  def delete
+  end
+  
+end

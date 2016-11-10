@@ -1,7 +1,7 @@
 class RepuestoensedeService
 
   def initialize()
-    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/repuestoEnSedeWS?wsdl")
+    @client = Savon.client(wsdl: "http://25.77.79.209:8085/WebServicesAlmacenMyM/services/repuestoEnSedeWS?wsdl")
   end
 
   def consultar_repuesto_en_sede
@@ -21,6 +21,10 @@ class RepuestoensedeService
   end
   
   def modificar_repuesto_en_sede
+  end
+
+  def listar_repuestos()
+    response = @client.call(:listar_r, message: {})
   end
 
 end

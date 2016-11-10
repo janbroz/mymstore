@@ -1,0 +1,24 @@
+<h1> Agregar una venta </h1>
+
+<%= form_for :sale, url: sale_details_path do |f| %>
+  <p>
+    <%= f.label :cliente %><br>
+    <%= f.text_field :cliente %>
+  </p>
+  
+  <p>
+    <%= f.label :vendedor %><br>
+    <%= f.text_field :vendedor %>
+  </p>
+  
+  <p>
+    <%= f.label :fecha %><br>
+    <%= f.text_field :fecha %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+    

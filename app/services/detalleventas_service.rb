@@ -1,7 +1,7 @@
 class DetalleventasService
 
   def initialize()
-    @client = Savon.client(wsdl: "http://localhost:8085/WebServicesAlmacenMyM/services/DetalleVentaWS?wsdl")
+    @client = Savon.client(wsdl: "http://25.77.79.209:8085/WebServicesAlmacenMyM/services/DetalleVentaWS?wsdl")
   end
 
   def crear_venta()
@@ -17,6 +17,10 @@ class DetalleventasService
   end
 
   def generar_factura()
+  end
+
+  def consultar_detalles(id)
+
   end
 
   def generar_devolucion()
